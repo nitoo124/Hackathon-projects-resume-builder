@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(171, 179, 255);
+}
+
+
+.container{
+    background: white;
+    max-width: 850px;
+    margin: 60px auto;
+   ;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+    text-align: center;
+    
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   margin: 0% auto;
+   overflow: hidden;
+   border: 10px solid rgb(240, 147, 163);
+ 
+}
+
+.image img{
+   width: 100%;
+    border-radius: 50%;
+
+
+}
+
+.header h1{
+    padding: 10px 5px 0px;
+
+   
+}
+.header h3{
+    font-size: 15px;
+    font-weight: 500px;
+
+   
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side{
+    flex: 1;
+    padding: 30px;
+}
+
+.left-side p{
+    line-height: 2;
+}
+
+.left-side ul li{
+    line-height: 2;
+}
+
+h2{
+    background: rgb(240, 147, 163);
+    padding: 15px;
+    color: white;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px;
+}
+
+.right-side{
+    flex: 1;
+    padding: 30px;
+
+}
+
+.right-side h3{
+    margin-bottom: 15px;
+
+}
+
+.right-side p{
+    line-height: 2.9;
+}
+
+.right-side ul li{
+    line-height: 2;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header h3 {
+        font-size: 14px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        padding: 15px;
+    }
+
+    .left-side h2, .right-side h2 {
+        font-size: 18px;
+    }
+
+    .left-side ul li, .right-side ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header h3 {
+        font-size: 12px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        padding: 10px;
+    }
+
+    .left-side h2, .right-side h2 {
+        font-size: 16px;
+    }
+
+    .left-side ul li, .right-side ul li {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
