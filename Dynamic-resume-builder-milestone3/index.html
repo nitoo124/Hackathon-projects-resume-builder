@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeForm">
+
+        <h2>Profile Picture</h2>
+        <label for="profilePic">Upload Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <h2>Education</h2>
+        <label for="education">Institution Name:</label>
+        <input type="text" id="education" name="education" required>
+        
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+        
+        <label for="gradDate">Graduation Date:</label>
+        <input type="date" id="gradDate" name="gradDate" required>
+        
+        <h2>Work Experience</h2>
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+        
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+        
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" required>
+        
+        <label for="responsibilities">Responsibilities:</label>
+        <textarea id="responsibilities" name="responsibilities" required></textarea>
+        
+        <h2>Skills</h2>
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, TypeScript" required>
+        
+        
+        <button type="submit">Generate Resume</button>
+    </form>
+    
+    <div id="resumeOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
